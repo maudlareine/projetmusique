@@ -5,19 +5,19 @@ h1
 }
 .logo
 {
-  width: 150px;
+  width: 150px; /* taille logo */
 }
 
 body
 {
-  background: linear-gradient(black, grey);
+  background: linear-gradient(black, grey); /* couleur fond */
   color: white;
 }
 
 ul#menu_horizontal li {
   display :inline;
   padding: 0 5.0em;
-  background-color: pink;
+  background-color: pink; /*couleur case menu horizontal */
   width: 500px;
 }
 a#menu_horizontal {
@@ -32,7 +32,7 @@ a#menu_horizontal {
 }
 
  #menu_horizontal > li > a:visited {
-color: black;
+color: black;  /* couleur liens menu horizontal aprés clic */
 }
   a:hover, a:focus, a:active{
     color:white;
@@ -42,15 +42,44 @@ color: black;
 ul {
   text-align: center;
   list-style-type: none;
-  color: white
+  font-weight: bolder;
+  color: pink; /* concerne les rubriques sur la page */
 }
 
+.rating a {
+  color: grey;
+  text-decoration:  none;
+  font-size:  2em;
+  transition: color .4s;
+}
 
-p{
-  color:white;
+.rating a:hover,
+.rating a:focus {
+  color: pink;
+  cursor: pointer;
+}
 
-  }
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+  color: purple;
+}
 
-li.style {
-  color:green;
+.rating a {
+  float: center;
+}
+
+ul#ARTISTES {
+  border: 3px pink inset;
+}
+ul#STYLE {
+  border: 3px pink inset;
+}
+ul#FAVORIS {
+  border: 3px pink inset;
+}
+ul#ÉCOUTÉSRÉCEMMENT {
+  border: 3px pink inset;
+}
+footer {
+  text-align: center;
 }
