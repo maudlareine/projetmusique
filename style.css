@@ -47,7 +47,7 @@ ul {
   color: pink; /* concerne les rubriques sur la page */
 }
 
-.rating a {
+.rating a { /* NOTATION ÉTOILES COULEURS */
   color: grey;
   text-decoration:  none;
   font-size:  2em;
@@ -67,13 +67,16 @@ ul {
 
 .rating a {
   float: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
 ul#ARTISTES {
   border: 3px pink inset;
 }
-ul#TOPLIST {
+ul#TOPLIST {    /* CADRE TOPLIST */
     display: flex;
     flex-direction: column;
     align-items: center;
