@@ -2,6 +2,7 @@ h1
 {
   color: pink;
   text-align: center;
+  font-size: 200%;
 }
 .logo
 {
@@ -68,11 +69,29 @@ ul {
   float: center;
 }
 
+
 ul#ARTISTES {
   border: 3px pink inset;
 }
+ul#TOPLIST {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    align-content: center;
+    margin: auto;
+    border: 2px solid;
+    -webkit-padding-start: 0px;
+    font-size: large;
+}
 ul#STYLE {
   border: 3px pink inset;
+  font-size: large;
+
+}
+ul#STYLE > img {
+  width: 50px;
+  height: 50px;
 }
 ul#FAVORIS {
   border: 3px pink inset;
@@ -82,4 +101,5 @@ ul#ÉCOUTÉSRÉCEMMENT {
 }
 footer {
   text-align: center;
+  font-size: 150%  /* pied de page */
 }
